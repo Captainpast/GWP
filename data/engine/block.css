@@ -1,0 +1,190 @@
+/*CSS by Captainpast*/
+
+div#list {
+    background-color: #535353;
+    color: #ffffff;
+    position: absolute;
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 5px;
+    z-index: 6;
+}
+
+div#list p {
+    margin: 0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+div#list .li {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.draggable, .draggabl {
+  cursor: url('/data/grab.png') 12.5 12.5, grab;
+}
+
+div.block {
+  margin: 10px;
+  min-width: 70px;
+  width: min-content;
+}
+div.block .doCode{
+  display: none;
+}
+div.attributes div.top,  div.attributes div.input, div.attributes div.buttom,
+div.content div.attributes div.top, div.content div.attributes div.input, div.content div.attributes div.buttom {
+  background-color: #0088ff;
+}
+
+div.style div.top, div.style div.input, div.style div.buttom,
+div.content div.style div.top, div.content div.style div.input, div.content div.style div.buttom {
+  background-color: #9060ff;
+}
+
+div.control div.top, div.control div.input, div.control div.buttom,
+div.content div.control div.top, div.content div.control div.input, div.content div.control div.buttom {
+  background-color: #ffcf00;
+}
+
+div.var div.top, div.var div.input, div.var div.buttom,
+div.content div.var div.top, div.content div.var div.input, div.content div.var div.buttom {
+  background-color: #ff9000;
+}
+
+div.block[type="hed"] div.top {
+  height: 15px;
+  width: 80px;
+  border-radius: 40px 100px 0px 0px;
+}
+
+div.block[type="center"] div.top, div.block[type="end"] div.top {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  height: 10px;
+  width: 30px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: #ffffff;
+}
+
+div.block[type="hed"] div.input {
+  border-radius: 0px 5px 5px 5px;
+  padding: 9px;
+  padding-top: 11px;
+  width: max-content;
+  min-width: 70px;
+}
+
+div.block[type="center"] div.input, div.block[type="end"] div.input {
+  border-radius: 5px;
+  padding: 9px;
+  padding-top: 11px;
+  width: max-content;
+  min-width: 70px;
+}
+
+div.block[type="hed"] div.buttom, div.block[type="center"] div.buttom {
+  position: relative;
+  left: 20px;
+  height: 10px;
+  width: 30px;
+  border-radius: 0px 0px 8px 8px;
+  z-index: 1;
+}
+
+div.block[type="end"] div.buttom {
+  display: none;
+}
+
+div.block[type="var"] div.input {
+  border-radius: 20px;
+  padding: 3px 10px;
+  width: max-content;
+  min-width: 70px;
+}
+div.block[type="var"] div.buttom, div.block[type="var"] div.top {
+  display: none;
+}
+div.block[type="var"] div.input * {
+  margin: 2px;
+}
+
+div.block div.input * {
+  margin: 0px 4px;
+}
+
+div.block div.input span::after {
+  content: attr(value);
+}
+
+div.block div.input input {
+  padding: 1px;
+  font-size: 10px;
+  border: none;
+  width: 30px;
+}
+div.block div.input input::selection {
+  background-color: #af59ff;
+}
+div.block div.input button {
+  padding: 1px;
+  border: none;
+  background-color: #ffffff;
+  margin-left: -3px;
+  color: #000000;
+  transform: rotate(180deg);
+}
+div.block div.input button::after {
+  font-size: 10px;
+  content: "^";
+}
+
+div#blockzone button#var-add, div#blockzone button#var-del {
+  margin: 5px;
+  background-color: #626262;
+  padding: 1px;
+  border-radius: 5px;
+  border-style: none;
+  color: #000000;
+  transition: color 0.5s;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #03ff03;
+  font-weight: bold;
+}
+div#blockzone button#var-add{
+  color: #03ff03;
+}
+div#blockzone button#var-del{
+  color: #fb0303;
+}
+
+button[styl=var-add] {
+  background-color: #ababab;
+  padding: 4px;
+  border-radius: 5px;
+  border-style: none;
+  min-width: 26px;
+  height: 26px;
+  font-size: 16px;
+  color: #000000;
+  display: block;
+}
+button[styl=var-rem] {
+  margin: 1px 0;
+  background-color: #ffffff;
+  padding: 2px;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  width: 100%;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+button[styl=var-rem]:hover {
+  background-color: #f00;
+}

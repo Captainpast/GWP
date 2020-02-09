@@ -1,0 +1,61 @@
+/*CSS by Captainpast*/
+
+div#storage{
+  display: none;
+}
+
+button.select {
+  margin: 0;
+  background-color: #626262;
+  padding: 2px;
+  border-radius: 5px;
+  border-style: none;
+  transition: color 0.5s;
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  position: absolute;
+  left: 3px;
+  top: 48px;
+  color: #03ff03;
+  font-weight: bold;
+}
+
+ul#select {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 25px;
+  background: #ffffff;
+  height: 25px;
+}
+ul#select li {
+  float: left;
+  margin: 1px;
+  padding: 4px;
+  padding-top: 1px;
+  background: #545454;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 2px;
+  border-top-color: #000;
+  transition: border-top-color 0.5s;
+}
+ul#select li:hover {
+  border-top-color: #08cbff;
+}
+ul#select li.active {
+  border-top-color: #08cbff;
+}
+ul#select li p {
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+ul#select li p::after {
+  content: attr(title);
+  color: #ffffff;
+  text-align: center;
+}

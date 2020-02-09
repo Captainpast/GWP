@@ -1,0 +1,112 @@
+/*CSS by Captainpast*/
+
+div.window {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  background: #d1d1d1;
+  border-radius: 10px;
+  z-index: 99;
+  opacity: 0;
+  box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.28);
+  transition: height 0.5s, opacity 0.5s, box-shadow 0.5s;
+  overflow-y: hidden;
+}
+
+div.window div.windowHead{
+  height: 20px;
+  width: 100%;
+  background: #9e9e9e;
+  border-radius: 10px 10px 0 0;
+  cursor: url('/data/grab.png') 12.5 12.5, grab;
+}
+
+div.window div.windowHead #title{
+  padding: 0;
+  margin: 0;
+  width: calc(100% - 15px);
+  text-align: center;
+  display: inline-block;
+}
+
+div.window div.windowHead #title::after{
+  content: attr(value);
+  color: #dadada;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.window div.windowHead #close{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  right: 5px;
+}
+
+div.window div.windowBody{
+  overflow: auto;
+  padding: 5px;
+}
+
+div.windowBody p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+div.windowBody label {
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+div.windowBody input[type="radio"] {
+  margin: 1px;
+}
+
+div.windowBody input[type="text"] {
+  padding: 1px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+}
+div.windowBody textarea {
+  padding: 1px;
+  font-size: 12px;
+  background-color: #ffffff;
+  border: none;
+  resize: none;
+}
+div.windowBody input::selection, div.windowBody textarea::selection{
+  background-color: #af59ff;
+}
+
+div.windowBody button, div.windowBody button.type1 {
+  background-color: #ababab;
+  padding: 4px;
+  border-radius: 5px;
+  border-style: none;
+  min-width: 26px;
+  height: 26px;
+  font-size: 16px;
+  color: #000000;
+  display: block;
+}
+
+div.windowBody button.type2 {
+  margin: 1px 0;
+  background-color: #ffffff;
+  padding: 2px;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  width: 100%;
+  overflow: hidden;
+}

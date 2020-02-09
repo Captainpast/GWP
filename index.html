@@ -1,0 +1,88 @@
+<!doctype html>
+<!--HTML by Captainpast-->
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8a8a8a">
+    <link rel="stylesheet" href="/GWP/data/engine(old)/layout.css">
+    <link rel="stylesheet" href="/GWP/data/engine(old)/block.css">
+    <link rel="stylesheet" href="/GWP/data/engine(old)/element.css">
+    <link rel="stylesheet" href="/GWP/data/engine(old)/select-menu.css">
+    <link rel="stylesheet" href="/GWP/data/engine(old)/window.css">
+    <script src="/GWP/data/engine(old)/layout.js"></script>
+    <script src="/GWP/data/engine(old)/block-drag.js"></script>
+    <script src="/GWP/data/engine(old)/block-menu.js"></script>
+    <script src="/GWP/data/engine(old)/select-menu.js"></script>
+    <script src="/GWP/data/engine(old)/keyboard-shortcut.js"></script>
+    <script src="/GWP/data/engine(old)/element-drag.js"></script>
+    <script src="/GWP/data/engine(old)/element-menu.js"></script>
+    <script src="/GWP/data/engine(old)/run-project.js"></script>
+    <script src="/GWP/data/engine(old)/port-project.js"></script>
+    <script src="/GWP/data/engine(old)/window-menu.js"></script>
+    <script src="/GWP/data/engine(old)/multi-language.js"></script>
+    <script src="/GWP/data/engine(old)/right-click.js"></script>
+    <link rel="icon" href="/data/logo.png" type="image/png">
+    <title>Graphical Web Programming v0.3</title>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><div class="icon"></div></li>
+      <li id="navbar-user"><p>User</p></li>
+      <li id="navbar-project"><p>Project</p></li>
+      <li id="navbar-settings"><p>Settings</p></li>
+      <button id="end-project" onclick="" type="button" style="color:#fb0303">■</button>
+      <button id="start-project" onclick="" type="button" style="color:#0ddb00">▶</button>
+    </ul>
+    <ul id="select">
+
+    </ul>
+    <button type="button" class="select" id="file-add">+</button>
+    <div id="desk">
+
+    </div>
+    <div id="storage">
+      <div title="script.js" type="js">
+        <div>
+          <div id="dp1">
+            <ul class="typbar block">
+              <button id="attributes" onclick="loadBlocks('attributes')" type="button">Attributes</button>
+              <button id="style" onclick="loadBlocks('style')" type="button">Style</button>
+              <button id="control" onclick="loadBlocks('control')" type="button">Control</button>
+              <button id="var" onclick="loadBlocks('var')" type="button">Variables</button>
+            </ul>
+            <div id="blockzone">
+            </div>
+          </div>
+          <div id="dp2">
+            <div id="blockfield">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div title="main.html" type="html">
+        <div>
+          <div id="hz1">
+            <ul class="typbar element">
+              <button id="normal" onclick="loadElements('normal')" type="button">Normal</button>
+              <button id="special" onclick="loadElements('special')" type="button">Special</button>
+            </ul>
+            <div id="elementzone">
+            </div>
+          </div>
+          <div id="hz2" onmousedown="selectElementHZ(event)" style="background:#ffffff;" docname="">
+          </div>
+          <div id="hz3">
+            <h2 id="elem-name">DIV</h2>
+            <button type="button" id="elem-delete">delete</button>
+            <form id="elem-attri">
+
+            </form>
+            <button type="button" id="attri-add">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

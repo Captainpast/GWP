@@ -36,7 +36,7 @@ ul.navbar li {
 ul.navbar div.icon {
   height: 30px;
   width: 30px;
-  background-image: url('/data/logo.png');
+  background-image: url('./data/logo.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
